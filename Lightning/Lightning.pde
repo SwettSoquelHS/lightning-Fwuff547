@@ -2,6 +2,7 @@ int startX;
 int startY;
 int endX;
 int endY;
+
 void setup()
 {
   startX = 0;
@@ -9,10 +10,12 @@ void setup()
   endX = 0;
   endY = 150;
   size(800,500);
+  strokeWeight(5);
+  background(#211689);
 }
 void draw()
 {
-  fill(255, 40);
+  fill(#211689, 40);
   rect(0,0, width, height);
   stroke((int)(Math.random()));
   while (endX <800 && endX > -800) {
