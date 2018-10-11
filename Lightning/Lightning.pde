@@ -17,7 +17,11 @@ void draw()
 {
   fill(#211689, 40);
   rect(0,0, width, height);
-  stroke((int)(Math.random()));
+  float x = (float)Math.random()*100;
+  float y = (float)Math.random()*100;
+  float z = (float)Math.random()*100;
+ 
+  stroke(x, y, z);
   while (endX <800 && endX > -800) {
     endX = startX + ( (int)( Math.random()*10) );
     endY = startY + ( (int)( Math.random()*19 - 9) );
